@@ -1,0 +1,1 @@
+SELECT * FROM `vlogs` WHERE Comment='Generated via Timestamp';

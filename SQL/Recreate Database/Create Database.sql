@@ -1,0 +1,2 @@
+DROP DATABASE VolunteerLog;
+CREATE DATABASE IF NOT EXISTS VolunteerLog;

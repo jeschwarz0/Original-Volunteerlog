@@ -1,0 +1,5 @@
+/*
+Alters the view vlogs
+Replace "Create" with "Alter" if view exists
+*/
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `vlogs` AS select `v`.`FirstName` AS `FirstName`,`v`.`LastName` AS `LastName`,`vl`.`Date` AS `Date`,`vl`.`TimeIn` AS `TimeIn`,`vl`.`TimeOut` AS `TimeOut`,TotalHours ,`vl`.`Comment` AS `Comment`,`vt`.`Class` AS `Class`,`vt`.`Office` AS `Office`,`vt`.`Maintenance` AS `Maintenance`,`vt`.`Conditioning` AS `Conditioning`,`vt`.`HorseCare` AS `HorseCare`,`vt`.`Committee` AS `Committee`,`vt`.`Board` AS `Board`,`vt`.`HorseLeading` AS `HorseLeading`,`vt`.`Sidewalking` AS `Sidewalking`,`vt`.`Other` AS `Other`,`vt`.`OtherDescription` AS `OtherDescription` from ((`volunteer` `v` join `volunteerlog` `vl` on((`v`.`VolunteerID` = `vl`.`VolunteerID`))) join `volunteertask` `vt` on((`vt`.`TaskID` = `vl`.`TaskID`)));

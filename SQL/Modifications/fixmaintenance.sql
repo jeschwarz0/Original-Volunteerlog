@@ -1,0 +1,1 @@
+ALTER TABLE `volunteertask` CHANGE `MaINTenance` `Maintenance` TINYINT( 1 ) NOT NULL 

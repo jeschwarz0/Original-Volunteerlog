@@ -1,0 +1,111 @@
+/*	Styles for the main page	*/
+body{ 
+	margin: 0; 
+	padding: 0; 
+	padding-top: 2%;
+	padding-bottom:0%;
+	background-image:url("../images/ncr-logo-background.jpg");
+	background-color:black;
+}
+
+#nav{
+	width: 80%; /* set to desired width in px or percent */
+	height:100%;
+	text-align: left; /* optionally you could use "justified" */
+	padding: 0;
+	margin: 0 auto;
+} 
+
+h1{
+	top:0px;
+	text-align:center;
+	color:lightblue;
+}
+
+#vid{
+	font-size:20px;
+}
+
+#start h2{
+	font-family:"Constantia",serif;
+	text-align:left;
+}
+
+#start p.info{
+	font-family:"Georgia","Times New Roman",serif;
+	font-size:.95em;
+}
+
+#start p.hint{
+	font-family:"consolas",serif;
+	font-size:1.2em;
+	font-weight:bold;
+	color:lightyellow;
+	background-color:black;
+	border:double 3px blue;
+	display:inline;
+}
+/*	Noscript- Should use the whole page	*/
+#ns{
+	position:fixed;
+	top:0px;
+	left:0px;
+	height:100%;
+	width:100%;
+	background-color:red;
+	color:purple;
+	font-size:12em;
+	text-align:center;
+	font-family:'Impact',serif;
+	border: dotted 12px blue;
+}
+
+#ns-jscript{
+	color:green;
+	text-decoration:underline;
+}
+
+form fieldset{
+	display:inline;
+}
+/*	Other Description	*/
+#odes{
+	display:none;
+}
+
+#dmesg-icon{
+	height:64px;
+	width:64px;
+	padding-right:10px;
+	float:left;
+}
+
+#dmesg{
+	height:64px;
+}
+
+p.error, span.error{
+	background-color:yellow;
+	color:red;
+	display:inline;
+}
+
+iframe{
+	border:none;
+}
+
+textarea{
+	resize: none;
+}
+
+#start div{
+	position:absolute;
+	left:160px;
+	top:35px;
+	padding-right:25px;
+}
+
+#start img{
+	border:none;
+
+}

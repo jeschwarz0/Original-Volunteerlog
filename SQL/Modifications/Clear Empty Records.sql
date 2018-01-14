@@ -1,0 +1,1 @@
+DELETE FROM VolunteerLog WHERE TotalHours=0.00;

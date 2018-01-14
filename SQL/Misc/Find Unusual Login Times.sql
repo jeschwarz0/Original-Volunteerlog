@@ -1,0 +1,1 @@
+SELECT * FROM vlogs WHERE TimeIn>'20:00:00' OR TimeIn<'8:00:00';

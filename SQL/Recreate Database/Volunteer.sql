@@ -1,0 +1,6 @@
+CREATE TABLE Volunteer(
+VolunteerID INT NOT NULL,
+FirstName VARCHAR(45) NOT NULL,
+LastName VARCHAR(45) NOT NULL,
+PRIMARY KEY(VolunteerID)
+);

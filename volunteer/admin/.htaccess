@@ -1,0 +1,4 @@
+AuthName "Username and Password Required!"
+AuthType Basic
+AuthUserFile "../admpasswd.txt"
+require valid-user

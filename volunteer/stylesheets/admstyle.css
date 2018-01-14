@@ -1,0 +1,66 @@
+/*	Admin Styles	*/
+fieldset{
+	display:inline-table;
+}
+/*
+#timestamps fieldset{
+	height:100%;
+}
+*/
+#timestamps fieldset {
+	width:140px;
+}
+
+fieldset.subfield{
+	font-family:"SimSun-ExtB","consolas",serif;
+}
+/*Image as hyperlink*/
+a img{
+	border:none;
+}
+
+#uout,#results{
+	left:0px;
+	padding-left:0px;
+	height:auto;
+	width:390px;
+	float:right;
+	font-size:.95em;
+}
+
+#results{
+	height:590px;
+}
+
+#results input{
+	font-size:.80em;
+}
+
+#FormHolder{
+	float:left;
+}
+
+/*Required for "Report", clears the floats*/
+.clear{clear: both;}
+
+#FormHolder fieldset{
+	width:325px;
+	border-color:lightgrey;
+	border-top-color:black;
+}
+
+span.note{
+	font-size:.65em;
+	font-family: "Georgia",serif;
+}
+
+#bholder{
+	display:block;
+	left:200px;
+	margin-left:200px;
+}
+
+.critical{
+	color:red;
+	font-weight:bold;
+}

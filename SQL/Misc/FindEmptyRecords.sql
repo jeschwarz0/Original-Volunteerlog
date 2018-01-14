@@ -1,0 +1,1 @@
+SELECT * FROM `vlogs` WHERE TotalHours=0.00
