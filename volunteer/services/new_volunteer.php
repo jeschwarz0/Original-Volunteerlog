@@ -21,7 +21,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){//must be submitted
 *@param string $VAL The value to trim
 */
 function spaceTrim(&$VAL){
-	$VAL=str_replace(&$VAL," ","");
+	$VAL=str_replace($VAL," ","");
 }
 /**
  *Inserts a volunteer from the name

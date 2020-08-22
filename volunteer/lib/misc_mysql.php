@@ -49,7 +49,7 @@ function getVolunteerIDFromName($NAME){
 	global $vc;
 	if(empty($NAME)||is_numeric($NAME)||!$vc||!is_string($NAME))
 		return false;
-	$nsep=split(" ",mysqli_real_escape_string($vc,$NAME));
+	$nsep=explode(" ",mysqli_real_escape_string($vc,$NAME));
 	$res=mysqli_query($vc,"SELECT VolunteerID FROM Volunteer WHERE FirstName='{$nsep['0']}'".(isset($nsep['1'])?"AND LastName='{$nsep['1']}'":"AND TRUE")." LIMIT 1;");
 	unset($nsep);
 	if($res){

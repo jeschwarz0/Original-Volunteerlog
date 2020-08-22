@@ -85,7 +85,9 @@ function isToday($date){
     $chk=date_parse($date);
 	if($chk){
 	//echo "<p>Today:".date("Y-m-d")."<br/>Date:".$date."</p>";
-	$nw=date_parse(date("Y-m-d"));
+	// Fixes the regression in date/time
+	date_default_timezone_set("America/Chicago");
+	$nw=date_parse(date("Y-m-d H:i:s"));
 		return($chk['day']==$nw['day']&&$chk['month']==$nw['month']&&$chk['year']==$nw['year']);
 	}else return false;
 }
