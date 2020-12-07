@@ -22,3 +22,4 @@ Versions:
 	MySQL: 5.1.41
 
 *Compatible with Windows 2000, the current production OS
+Licensed under MIT license
